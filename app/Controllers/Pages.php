@@ -10,5 +10,4 @@ class Pages extends BaseController
 		echo view('index');
 		echo view('layout/footer');
 	}
-
 }

@@ -1,3 +1,6 @@
+<?= $this->extend('layout/template'); ?>
+
+    <?= $this->section('content'); ?>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top bg-primary">
             <div class="container">
@@ -104,6 +107,8 @@
     <footer style="background-color: white;" class=" text-center pb-4">
       <p>Createt with <i class="bi bi-heart-fill text-danger"></i> by <a href="#" class=" fw-bold">Alifianto Narendra</a></p>
     </footer>
+
+  <?= $this->endSection(); ?>
 
 
 
