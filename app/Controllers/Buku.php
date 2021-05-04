@@ -16,11 +16,11 @@ class Buku extends BaseController
 	public function index()
 	{
 
-        $buku       = $this->bukuModel->findAll();
+        // $buku       = $this->bukuModel->findAll();
 
         $data = [
             'title' => 'Daftar Buku',
-            'buku'  => $buku
+            'buku'  => $this->bukuModel->getBuku()
         ];
 
         // koneksi databse tanpa model
@@ -35,4 +35,13 @@ class Buku extends BaseController
 
 		return view('buku/index', $data);
 	}
+
+    public function detail($slug)
+    {
+        $data = [
+            'title' => 'Daftar Buku',
+            'buku'  => $this->bukuModel->getBuku($slug)
+        ];
+        return view('buku/detail', $data);
+    }
 }

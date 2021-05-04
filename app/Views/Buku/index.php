@@ -45,7 +45,7 @@
                                 <td><img src="/assets/buku/<?= $book['gambar']; ?>" alt="" class="gmbr"/></td>
                                 <td><?= $book['judul']; ?></td>
                                 <td>
-                                    <a href="/assets/buku/codeigniter.jpg" class="btn btn-primary">Detail</a>
+                                    <a href="/buku/<?= $book['slug']; ?>" class="btn btn-primary">Detail</a>
                                 </td>
                             </tr>
                             <?php endforeach; ?>
